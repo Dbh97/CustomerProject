@@ -1,0 +1,12 @@
+﻿@using CustomerProject.Models.ViewModels
+@model EditCustomerViewModel
+
+<h3>Edit Customer</h3>
+
+<form method="post" asp-controller="customers" asp-action="edit">
+
+    <input type="hidden" asp-for="Id" />
+
+    <partial name="_CustomerForm" model="@Model" />
+
+</form>

@@ -1,0 +1,10 @@
+﻿@using CustomerProject.Models.ViewModels
+@model AddCustomerViewModel
+
+<h3>Add Customer</h3>
+
+<form method="post" asp-controller="customers" asp-action="add">
+
+    <partial name="_CustomerForm" model="@Model" />
+
+</form>
